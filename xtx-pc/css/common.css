@@ -1,0 +1,175 @@
+/* 存放公共的css样式 比如页面的头部和底部  */
+
+.xtx-shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.xtx-shortcut li {
+    float: left;
+}
+/* 找到偶数的 li标签 */
+.xtx-shortcut li:nth-child(2n) {
+    width: 1px;
+    height: 14px;
+    background-color: #666;
+    margin: 19px 15px 0;
+}
+
+.xtx-shortcut li a {
+    color: #dcdcdc;
+    font-size: 14px;
+    line-height: 52px;
+}
+
+.xtx-phone::before {
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background: url(../images/sprites.png) -160px -70px;
+    transform: translateY(3px);
+    margin-right: 8px;
+}
+
+
+.xtx-main-nav {
+    height: 130px;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.logo a {
+    display: block;
+    width: 207px;
+    height: 70px;
+    background: url(../images/logo.png);
+    background-size: 100% 100%;
+    /* 1.淘宝做法  
+    text-indent: -999px;
+    overflow: hidden;*/
+    /* 2. 京东做法 */
+    font-size: 0;
+}
+
+.nav {
+    margin-left: 40px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 48px;
+}
+.nav li a {
+    line-height: 130px;
+    padding-bottom: 7px;
+}
+.nav li a:hover {
+    border-bottom: 1px solid #27ba9b;
+}
+
+.search {
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+    margin: 54px 15px 0 30px;
+}
+.search  button {
+    float: left;
+    width: 18px;
+    height: 18px;
+    background: url(../images/sprites.png) -80px -70px;
+    margin-top: 5px;
+    border: 0;
+    /* 模拟小手 */
+    cursor: pointer;
+    
+}
+.search input {
+    float: left;
+    width: 154px;
+    height: 28px;
+    padding-left: 10px;
+}
+.search input::placeholder {
+    color: #cccccc;
+}
+
+.cart {
+    margin-top: 58px;
+}
+
+.cart a {
+    position: relative;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprites.png) -120px -70px;
+}
+.cart span {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    height: 15px;
+    padding: 0 6px;
+    background-color: #e26237;
+    color: #fff;
+    font-size: 13px;
+    line-height: 15px;
+    border-radius: 8px;
+}
+
+
+.xtx-footer {
+    height: 343px;
+    background-color: #333;
+}
+.xtx-service {
+    width: 1392px;
+    height: 174px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+}
+.xtx-service li {
+    float: left;
+    width: 464px;
+    height: 58px;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+}
+.xtx-service li i {
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    background: url(../images/sprites.png);
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.xtx-service li .icon-quick {
+    background-position: -130px 0;
+}
+
+.xtx-service li .icon-fresh {
+    background-position: -65px 0;
+}
+
+.xtx-copyright {
+    color: #999;
+    text-align: center;
+    font-size: 14px;
+}
+.xtx-copyright a {
+    color: #999;
+}
+.xtx-copyright span {
+    margin: 0 5px;
+}
+.xtx-copyright p:first-child {
+    margin: 40px 0 10px;
+}
